@@ -15,9 +15,9 @@
 include device/sony/tone/PlatformConfig.mk
 
 TARGET_BOOTLOADER_BOARD_NAME := unknown
-ifneq (,$(filter %f8131,$(TARGET_PRODUCT)))
+ifneq (,$(filter %hentai_dora_RoW,$(TARGET_PRODUCT)))
 TARGET_BOOTLOADER_BOARD_NAME := F8131
-else ifneq (,$(filter %f8132,$(TARGET_PRODUCT)))
+else ifneq (,$(filter %hentai_dora_DSDS,$(TARGET_PRODUCT)))
 TARGET_BOOTLOADER_BOARD_NAME := F8132
 # Reserve space for data encryption (53456404480-16384)
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 53456388096
@@ -30,6 +30,16 @@ endif
 PRODUCT_PLATFORM := tone
 
 BOARD_KERNEL_CMDLINE += androidboot.hardware=dora
+
+#Use Clang instead of Gcc 4.9
+TARGET_KERNEL_CLANG_COMPILE := true
+TARGET_CLANG_VERSION := r353983c
+
+#kernel
+BOARD_KERNEL_SEPARATED_DTBO := true
+TARGET_COMPILE_WITH_MSM_KERNEL := true
+TARGET_KERNEL_SOURCE := kernel/sony/msm-4.9/kernel
+TARGET_NEEDS_DTBOIMAGE := false
 
 # Partition information
 BOARD_FLASH_BLOCK_SIZE := 131072 # (BOARD_KERNEL_PAGESIZE * 64)
