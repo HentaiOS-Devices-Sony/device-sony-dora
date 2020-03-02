@@ -12,11 +12,14 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-PRODUCT_MAKEFILES := $(LOCAL_DIR)/aosp_f8131.mk \
-                     $(LOCAL_DIR)/aosp_f8132.mk
+PRODUCT_MAKEFILES :=  \
+    $(LOCAL_DIR)/hentai_dora_RoW.mk \
+    $(LOCAL_DIR)/hentai_dora_DSDS.mk
 
 COMMON_LUNCH_CHOICES += \
-    aosp_f8131-eng \
-    aosp_f8131-userdebug \
-    aosp_f8132-eng \
-    aosp_f8132-userdebug
+    hentai_dora_RoW-eng \
+    hentai_dora_RoW-userdebug \
+    hentai_dora_RoW-user \
+    hentai_dora_DSDS-eng \
+    hentai_dora_DSDS-userdebug \
+    hentai_dora_DSDS-user \
