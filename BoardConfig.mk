@@ -19,6 +19,10 @@ ifneq (,$(filter %hentai_dora_RoW,$(TARGET_PRODUCT)))
 TARGET_BOOTLOADER_BOARD_NAME := F8131
 else ifneq (,$(filter %hentai_dora_DSDS,$(TARGET_PRODUCT)))
 TARGET_BOOTLOADER_BOARD_NAME := F8132
+else ifneq (,$(filter %hentai_dora_DSDS_Go,$(TARGET_PRODUCT)))
+TARGET_BOOTLOADER_BOARD_NAME := F8132
+else ifneq (,$(filter %hentai_dora_RoW_Go,$(TARGET_PRODUCT)))
+TARGET_BOOTLOADER_BOARD_NAME := F8131
 # Reserve space for data encryption (53456404480-16384)
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 53456388096
 else
