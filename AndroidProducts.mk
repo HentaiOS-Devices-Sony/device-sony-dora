@@ -14,8 +14,9 @@
 
 PRODUCT_MAKEFILES :=  \
     $(LOCAL_DIR)/hentai_dora_RoW.mk \
-    $(LOCAL_DIR)/hentai_dora_DSDS.mk
-
+    $(LOCAL_DIR)/hentai_dora_DSDS.mk \
+    $(LOCAL_DIR)/hentai_dora_RoW_Go.mk \
+    $(LOCAL_DIR)/hentai_dora_DSDS_Go.mk \
 COMMON_LUNCH_CHOICES += \
     hentai_dora_RoW-eng \
     hentai_dora_RoW-userdebug \
@@ -23,3 +24,9 @@ COMMON_LUNCH_CHOICES += \
     hentai_dora_DSDS-eng \
     hentai_dora_DSDS-userdebug \
     hentai_dora_DSDS-user \
+    hentai_dora_RoW_Go-eng \
+    hentai_dora_RoW_Go-userdebug \
+    hentai_dora_RoW_Go-user \
+    hentai_dora_DSDS_Go-eng \
+    hentai_dora_DSDS_Go-userdebug \
+    hentai_dora_DSDS_Go-user \
